@@ -9,8 +9,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        lightBrown: "#938973", // Háttérszín a headerhez
+        red: "#ff0000", // Hover szín
+      },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"], // Globális betűtípus
       },
     },
   },

@@ -29,7 +29,7 @@ const Footer = () => {
           </h3>
           <ul className="space-y-2" style={{ fontFamily: "Montserrat" }}>
             <li>📍 1092 Budapest, Ráday u. 30.</li>
-            <li>📧 hello@gombospeti.hu</li>
+            <li>📧 hello@pelda.hu</li>
             <li>📞 +36 70 123 4567</li>
           </ul>
         </div>
@@ -93,7 +93,7 @@ const Footer = () => {
         className="container mx-auto text-center mt-6 text-sm text-gray-500"
         style={{ fontFamily: "Montserrat" }}
       >
-        Gombos Peti - Minden jog fenntartva! | Adatvédelmi tájékoztató | Süti
+        Sándor István - Minden jog fenntartva! | Adatvédelmi tájékoztató | Süti
         szabályzat
       </div>
     </footer>

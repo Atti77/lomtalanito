@@ -36,7 +36,6 @@ const Footer = () => {
             Elérhetőség
           </h3>
           <ul className="space-y-2" style={{ fontFamily: "Montserrat" }}>
-            <li>📍 1092 Budapest, Ráday u. 30.</li>
             <li>📧 istvansandor03@gmail.com.</li>
             <li>📞 +36 70 646 7247</li>
           </ul>

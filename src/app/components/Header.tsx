@@ -9,9 +9,7 @@ const Header = () => {
   };
   return (
     <header className="bg-[#938973] text-[#000000] py-4">
-      <nav className="container mx-auto flex justify-between items-center">
-        {/* Logo */}
-        <div className="font-bold text-lg">LOGO</div>
+      <nav className="container mx-auto flex justify-center items-center">
 
         {/* Navigációs menü */}
         <ul className="flex space-x-6 font-montserrat">

@@ -30,9 +30,9 @@ const WelcomeSection = () => {
             <li className="list-none">✅ Kedvező árak, rejtett költségek nélkül</li>
             <li className="list-none">✅ Környezettudatos hulladékkezelés</li>
           </ul>
-          <p className="font-bold mt-10 text-justify" style={{ fontFamily: "Montserrat" }}>
-            Ha szüksége van profi segítségre, hívjon minket bizalommal! <br />
-            📞 +36 70 646 7247 vagy írjon nekünk: istvansandor03@gmail.com.
+          <p className="font-bold mt-10" style={{ fontFamily: "Montserrat" }}>
+            Ha szüksége van profi segítségre, hívjon minket bizalommal!
+            📞+36 70 646 7247 vagy írjon nekünk: istvansandor03@gmail.com
           </p>
         </div>
       </div>

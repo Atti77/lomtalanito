@@ -1,6 +1,16 @@
+"use client";
+
 const HeroSection = () => {
+
+  const handleScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section
+      id="home"
       className="relative h-[500px] bg-cover bg-center"
       style={{ backgroundImage: "url('/lomtalanito-hero.png')" }}
     >
@@ -12,7 +22,7 @@ const HeroSection = () => {
 
       
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
-        <button className="bg-[#EF1111] text-black px-8 py-3 rounded hover:bg-red-700 transition">
+        <button className="bg-[#EF1111] text-black px-8 py-3 rounded hover:bg-red-700 transition" onClick={() => handleScroll("contact")}>
           KAPCSOLAT
         </button>
       </div>

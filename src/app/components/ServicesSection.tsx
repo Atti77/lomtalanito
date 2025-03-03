@@ -4,24 +4,24 @@ const ServicesSection = () => {
       title: "Sitt- és törmelékszállítás",
       description:
         "Építkezés, felújítás vagy bontás után gyorsan és szakszerűen elszállítjuk a keletkezett hulladékot.",
-      image: "/images/sitt-torlekszallitas.jpg", // Kép elérési útja
+      image: "/sitt.jpg", // Kép elérési útja
     },
     {
       title: "Lomtalanítás",
       description:
         "Segítünk megszabadulni a felesleges bútoroktól, háztartási eszközöktől, elektronikai hulladéktól és egyéb lomoktól.",
-      image: "/images/lomtalanitas.jpg", // Kép elérési útja
+      image: "/lomtalanitos.jpg", // Kép elérési útja
     },
     {
       title: "Költöztetés",
       description:
         "Legyen szó lakás- vagy irodaköltöztetésről, csapatunk gyors és biztonságos megoldást nyújt.",
-      image: "/images/koltoztetes.jpg", // Kép elérési útja
+      image: "/koltoztetes.jpg", // Kép elérési útja
     },
   ];
 
   return (
-    <section className="py-10 bg-[#D1CCBF] text-[#000000]">
+    <section id="services" className="py-10 bg-[#D1CCBF] text-[#000000]">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
         {services.map((service, index) => (
           <div

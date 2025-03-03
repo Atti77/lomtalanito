@@ -1,4 +1,12 @@
+"use client";
+
 const Header = () => {
+  const handleScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <header className="bg-[#938973] text-[#000000] py-4">
       <nav className="container mx-auto flex justify-between items-center">
@@ -8,24 +16,36 @@ const Header = () => {
         {/* Navigációs menü */}
         <ul className="flex space-x-6 font-montserrat">
           <li>
-            <a href="#" className="hover:text-red-500 transition">
+            <button
+              className="hover:text-red-500 transition"
+              onClick={() => handleScroll("home")}
+            >
               Főoldal
-            </a>
+            </button>
           </li>
           <li>
-            <a href="#" className="hover:text-red-500 transition">
+            <button
+              className="hover:text-red-500 transition"
+              onClick={() => handleScroll("about")}
+            >
               Rólunk
-            </a>
+            </button>
           </li>
           <li>
-            <a href="#" className="hover:text-red-500 transition">
+            <button
+              className="hover:text-red-500 transition"
+              onClick={() => handleScroll("services")}
+            >
               Blog
-            </a>
+            </button>
           </li>
           <li>
-            <a href="#" className="hover:text-red-500 transition">
+            <button
+              className="hover:text-red-500 transition"
+              onClick={() => handleScroll("contact")}
+            >
               Kapcsolat
-            </a>
+            </button>
           </li>
         </ul>
       </nav>

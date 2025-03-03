@@ -1,6 +1,14 @@
+"use client";
 import { FaFacebook, FaYoutube, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
+  const handleScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <footer className="bg-[#FFFFFF] text-[#000000] py-10">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 border-b pb-6">
@@ -29,8 +37,8 @@ const Footer = () => {
           </h3>
           <ul className="space-y-2" style={{ fontFamily: "Montserrat" }}>
             <li>📍 1092 Budapest, Ráday u. 30.</li>
-            <li>📧 hello@pelda.hu</li>
-            <li>📞 +36 70 123 4567</li>
+            <li>📧 istvansandor03@gmail.com.</li>
+            <li>📞 +36 70 646 7247</li>
           </ul>
         </div>
 
@@ -44,24 +52,36 @@ const Footer = () => {
           </h3>
           <ul className="space-y-2 mb-6" style={{ fontFamily: "Montserrat" }}>
             <li>
-              <a href="#" className="hover:text-gray-600">
+              <button
+                className="hover:text-gray-600"
+                onClick={() => handleScroll("home")}
+              >
                 Főoldal
-              </a>
+              </button>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-600">
+              <button
+                className="hover:text-gray-600"
+                onClick={() => handleScroll("about")}
+              >
                 Rólam
-              </a>
+              </button>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-600">
+              <button
+                className="hover:text-gray-600"
+                onClick={() => handleScroll("services")}
+              >
                 Blog
-              </a>
+              </button>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-600">
+              <button
+                className="hover:text-gray-600"
+                onClick={() => handleScroll("contact")}
+              >
                 Kapcsolat
-              </a>
+              </button>
             </li>
           </ul>
 
@@ -73,7 +93,11 @@ const Footer = () => {
           </h3>
           <div className="flex space-x-4">
             {/* Facebook */}
-            <a href="#" aria-label="Facebook">
+            <a
+              href="https://www.facebook.com/profile.php?id=61550297631107"
+              target="_blank"
+              aria-label="Facebook"
+            >
               <FaFacebook className="w-6 h-6" />
             </a>
             {/* YouTube */}

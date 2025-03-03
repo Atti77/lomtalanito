@@ -31,7 +31,7 @@ const WelcomeSection = () => {
             <li className="list-none">✅ Környezettudatos hulladékkezelés</li>
           </ul>
           <p className="font-bold mt-10" style={{ fontFamily: "Montserrat" }}>
-            Ha szüksége van profi segítségre, hívjon minket bizalommal!
+            Ha szüksége van profi segítségre, hívjon minket bizalommal! <br />
             📞+36 70 646 7247 vagy írjon nekünk: istvansandor03@gmail.com
           </p>
         </div>
